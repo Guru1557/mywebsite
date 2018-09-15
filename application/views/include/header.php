@@ -108,6 +108,13 @@
                     <li class="<?=($this->router->method==="userTable")?"active":"not-active"?>"> 
                         <a href="<?php echo base_url();?>user/userTable"> <i class="fa fa-users"></i> <span>Users</span></a>
                     </li>    
+                  
+                    <?php if(isset($this->session->userdata('user_details')[0]->user_type) && $this->session->userdata('user_details')[0]->user_type == 'admin'){ ?>
+                    <li class="<?=($this->router->method==="productadd")?"active":"not-active"?>"> 
+                        <a href="<?php echo base_url();?>Addproduct"> <i class="fa fa-users"></i> <span>Products Add</span></a>
+                    </li> 
+                    <?php } ?>
+
                 <?php }  if(isset($this->session->userdata('user_details')[0]->user_type) && $this->session->userdata('user_details')[0]->user_type == 'admin'){ ?>    
                     <li class="<?=($this->router->class==="setting")?"active":"not-active"?>">
                         <a href="<?php echo base_url("setting"); ?>"><i class="fa fa-cogs"></i> <span>Settings</span></a>
@@ -125,9 +132,8 @@
                    <li class="<?=($this->router->class==="product")?"active":"not-active"?>">
                         <a href="<?php echo base_url(); ?>product"><i class="fa fa-info-circle"></i> <span>Products</span></a>
                     </li>
-                    <li class="<?=($this->router->class==="productadd")?"active":"not-active"?>">
-                        <a href="<?php echo base_url(); ?>Addproduct"><i class="fa fa-info-circle"></i> <span>Products Add</span></a>
-                    </li>
+                    
+                 
                   <li class="<?=($this->router->class==="about")?"active":"not-active"?>">
                         <a href="<?php echo base_url("about"); ?>"><i class="fa fa-info-circle"></i> <span>About Us</span></a>
                     </li>

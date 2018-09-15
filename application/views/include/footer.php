@@ -1,8 +1,4 @@
-<div class="progress-main-div1">
-                        <div class="col-md-12">
-                        Pen and paper website
-                           </div>
-</div> 
+
             <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
