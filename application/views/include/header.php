@@ -122,8 +122,8 @@
                     </li>
 
                <?php  }*/ ?>
-                   <li class="<?=($this->router->class==="about")?"active":"not-active"?>">
-                        <a href="<?php echo base_url("products"); ?>"><i class="fa fa-info-circle"></i> <span>Products</span></a>
+                   <li class="<?=($this->router->class==="product")?"active":"not-active"?>">
+                        <a href="<?php echo base_url(); ?>product"><i class="fa fa-info-circle"></i> <span>Products</span></a>
                     </li>
 
                   <li class="<?=($this->router->class==="about")?"active":"not-active"?>">
