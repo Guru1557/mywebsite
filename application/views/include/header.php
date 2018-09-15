@@ -125,7 +125,9 @@
                    <li class="<?=($this->router->class==="product")?"active":"not-active"?>">
                         <a href="<?php echo base_url(); ?>product"><i class="fa fa-info-circle"></i> <span>Products</span></a>
                     </li>
-
+                    <li class="<?=($this->router->class==="productadd")?"active":"not-active"?>">
+                        <a href="<?php echo base_url(); ?>Addproduct"><i class="fa fa-info-circle"></i> <span>Products Add</span></a>
+                    </li>
                   <li class="<?=($this->router->class==="about")?"active":"not-active"?>">
                         <a href="<?php echo base_url("about"); ?>"><i class="fa fa-info-circle"></i> <span>About Us</span></a>
                     </li>
