@@ -35,17 +35,10 @@
             <input type="password" name="password" class="form-control" placeholder="Retype password" data-validation="confirmation">
             <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
           </div>
-          <div class="form-group has-feedback">
-            <input class="form-control" placeholder="pincode" data-validation="confirmation">
-            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input class="form-control" placeholder="password" data-validation="confirmation">
-            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-          </div>
+  
           <div class="form-group has-feedback">
             <?php $type = json_decode(setting_all('user_type')); ?>
-            <select name="user_type" id="" class="form-control">
+            <!-- <select name="user_type" id="" class="form-control"> -->
               <?php 
               foreach ($type as $key => $value) {
                 if($value != 'admin') {

@@ -110,9 +110,9 @@
                     </li>    
                   
                     <?php if(isset($this->session->userdata('user_details')[0]->user_type) && $this->session->userdata('user_details')[0]->user_type == 'admin'){ ?>
-                    <li class="<?=($this->router->method==="productadd")?"active":"not-active"?>"> 
+                    <!-- <li class="<?=($this->router->method==="productadd")?"active":"not-active"?>"> 
                         <a href="<?php echo base_url();?>Addproduct"> <i class="fa fa-users"></i> <span>Products Add</span></a>
-                    </li> 
+                    </li>  -->
                     <?php } ?>
 
                 <?php }  if(isset($this->session->userdata('user_details')[0]->user_type) && $this->session->userdata('user_details')[0]->user_type == 'admin'){ ?>    
